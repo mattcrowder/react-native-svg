@@ -33,8 +33,8 @@ import com.facebook.react.uimanager.annotations.ReactPropGroup;
 
 import java.util.Locale;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import static com.facebook.react.uimanager.MatrixMathHelper.determinant;
 import static com.facebook.react.uimanager.MatrixMathHelper.inverse;
@@ -1101,7 +1101,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
         mClassName = svgclass.toString();
     }
 
-    @Nonnull
+    @NonNull
     @Override
     public String getName() {
         return mClassName;
@@ -1138,7 +1138,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
     }
 
     @ReactProp(name = "opacity", defaultFloat = 1f)
-    public void setOpacity(@Nonnull VirtualView node, float opacity) {
+    public void setOpacity(@NonNull VirtualView node, float opacity) {
         node.setOpacity(opacity);
     }
 
@@ -1235,7 +1235,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
     }
 
     @ReactProp(name = ViewProps.POINTER_EVENTS)
-    public void setPointerEvents(VirtualView view, @androidx.annotation.Nullable String pointerEventsStr) {
+    public void setPointerEvents(VirtualView view, @Nullable String pointerEventsStr) {
         if (pointerEventsStr == null) {
             view.setPointerEvents(PointerEvents.AUTO);
         } else {
@@ -1271,7 +1271,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
     }
 
     @Override
-    protected void addEventEmitters(@Nonnull ThemedReactContext reactContext, @Nonnull VirtualView view) {
+    protected void addEventEmitters(@NonNull ThemedReactContext reactContext, @NonNull VirtualView view) {
         super.addEventEmitters(reactContext, view);
         view.setOnHierarchyChangeListener(new ViewGroup.OnHierarchyChangeListener() {
             @Override
@@ -1297,14 +1297,14 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
      * the parent class of the ViewManager may rely on callback being executed.
      */
     @Override
-    protected void onAfterUpdateTransaction(@Nonnull VirtualView node) {
+    protected void onAfterUpdateTransaction(@NonNull VirtualView node) {
         super.onAfterUpdateTransaction(node);
         invalidateSvgView(node);
     }
 
-    @Nonnull
+    @NonNull
     @Override
-    protected VirtualView createViewInstance(@Nonnull ThemedReactContext reactContext) {
+    protected VirtualView createViewInstance(@NonNull ThemedReactContext reactContext) {
         switch (svgClass) {
             case RNSVGGroup:
                 return new GroupView(reactContext);
@@ -1372,7 +1372,7 @@ class RenderableViewManager extends ViewGroupManager<VirtualView> {
     }
 
     @Override
-    public void onDropViewInstance(@Nonnull VirtualView view) {
+    public void onDropViewInstance(@NonNull VirtualView view) {
         super.onDropViewInstance(view);
         mTagToRenderableView.remove(view.getId());
     }

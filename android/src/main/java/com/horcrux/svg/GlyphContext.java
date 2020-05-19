@@ -13,7 +13,7 @@ import com.facebook.react.bridge.ReadableMap;
 
 import java.util.ArrayList;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 // https://www.w3.org/TR/SVG/text.html#TSpanElement
 class GlyphContext {

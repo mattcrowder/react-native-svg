@@ -35,8 +35,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * Custom {@link View} implementation that draws an RNSVGSvg React view and its children.
@@ -59,7 +58,7 @@ public class SvgView extends ReactViewGroup implements ReactCompoundView, ReactC
             mName = name;
         }
 
-        @Nonnull
+        @NonNull
         public String toString() {
             return mName;
         }

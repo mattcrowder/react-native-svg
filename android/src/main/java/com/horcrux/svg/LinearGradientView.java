@@ -19,7 +19,7 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.common.ReactConstants;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 @SuppressLint("ViewConstructor")
 class LinearGradientView extends DefinitionView {

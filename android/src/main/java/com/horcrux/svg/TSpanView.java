@@ -37,7 +37,7 @@ import java.util.ArrayList;
 
 import java.text.Bidi;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import static android.graphics.Matrix.MTRANS_X;
 import static android.graphics.Matrix.MTRANS_Y;

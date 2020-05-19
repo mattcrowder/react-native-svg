@@ -25,7 +25,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.views.view.ReactViewGroup;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 @SuppressLint("ViewConstructor")
 class GroupView extends RenderableView {

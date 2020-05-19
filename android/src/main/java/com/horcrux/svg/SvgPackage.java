@@ -19,15 +19,15 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import javax.annotation.Nonnull;
+import androidx.annotation.NonNull;
 
 import static com.horcrux.svg.RenderableViewManager.*;
 
 public class SvgPackage implements ReactPackage {
 
-    @Nonnull
+    @NonNull
     @Override
-    public List<ViewManager> createViewManagers(@Nonnull ReactApplicationContext reactContext) {
+    public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
                 new GroupViewManager(),
                 new PathViewManager(),
@@ -52,9 +52,9 @@ public class SvgPackage implements ReactPackage {
                 new SvgViewManager());
     }
 
-    @Nonnull
+    @NonNull
     @Override
-    public List<NativeModule> createNativeModules(@Nonnull ReactApplicationContext reactContext) {
+    public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
                 new SvgViewModule(reactContext),
                 new RNSVGRenderableManager(reactContext)

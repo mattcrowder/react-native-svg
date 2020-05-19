@@ -17,8 +17,8 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.views.view.ReactViewGroup;
 import com.facebook.react.views.view.ReactViewManager;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * ViewManager for RNSVGSvgView React views. Renders as a {@link SvgView} and handles
@@ -48,13 +48,13 @@ class SvgViewManager extends ReactViewManager {
         return mTagToSvgView.get(tag);
     }
 
-    @Nonnull
+    @NonNull
     @Override
     public String getName() {
         return REACT_CLASS;
     }
 
-    @Nonnull
+    @NonNull
     @Override
     public SvgView createViewInstance(ThemedReactContext reactContext) {
         return new SvgView(reactContext);
@@ -67,7 +67,7 @@ class SvgViewManager extends ReactViewManager {
     }
 
     @Override
-    public void onDropViewInstance(@Nonnull ReactViewGroup view) {
+    public void onDropViewInstance(@NonNull ReactViewGroup view) {
         super.onDropViewInstance(view);
         mTagToSvgView.remove(view.getId());
     }

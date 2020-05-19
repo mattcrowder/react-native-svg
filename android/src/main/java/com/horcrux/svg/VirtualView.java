@@ -25,7 +25,7 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 import java.util.ArrayList;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import static com.horcrux.svg.FontData.DEFAULT_FONT_SIZE;
 

@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 @SuppressWarnings({"WeakerAccess", "RedundantSuppression"})
 abstract public class RenderableView extends VirtualView {

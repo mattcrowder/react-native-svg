@@ -38,8 +38,8 @@ import com.facebook.react.views.imagehelper.ResourceDrawableIdHelper;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 @SuppressLint("ViewConstructor")
 class ImageView extends RenderableView {
@@ -166,7 +166,7 @@ class ImageView extends RenderableView {
         dataSource.subscribe(subscriber, UiThreadImmediateExecutorService.getInstance());
     }
 
-    @Nonnull
+    @NonNull
     private RectF getRect() {
         double x = relativeOnWidth(mX);
         double y = relativeOnHeight(mY);

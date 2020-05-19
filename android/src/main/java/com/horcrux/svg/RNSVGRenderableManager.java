@@ -28,7 +28,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import javax.annotation.Nonnull;
+import androidx.annotation.NonNull;
 
 import static com.facebook.react.common.StandardCharsets.UTF_8;
 
@@ -37,7 +37,7 @@ class RNSVGRenderableManager extends ReactContextBaseJavaModule {
         super(reactContext);
     }
 
-    @Nonnull
+    @NonNull
     @Override
     public String getName() {
         return "RNSVGRenderableManager";

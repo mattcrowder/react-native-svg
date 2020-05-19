@@ -18,7 +18,7 @@ import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import static com.horcrux.svg.TextProperties.*;
 

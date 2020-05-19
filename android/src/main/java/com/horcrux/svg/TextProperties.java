@@ -3,7 +3,7 @@ package com.horcrux.svg;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
+import androidx.annotation.NonNull;
 
 class TextProperties {
 
@@ -69,7 +69,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        @NonNull
         @Override
         public String toString() {
             return alignment;
@@ -131,7 +131,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        @NonNull
         @Override
         public String toString() {
             return weight;
@@ -172,7 +172,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        @NonNull
         @Override
         public String toString() {
             return decoration;
